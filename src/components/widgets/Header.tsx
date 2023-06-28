@@ -1,9 +1,7 @@
-import { component$, useStore, useClientEffect$ } from "@builder.io/qwik";
+import { component$, useStore } from "@builder.io/qwik";
 import { useContent } from "@builder.io/qwik-city";
 
-import LogoDark from "~/components/atoms/LogoDark";
 import LogoWhite from "~/components/atoms/LogoWhite";
-import ToggleTheme from "~/components/core/ToggleTheme";
 import ToggleMenu from "~/components/core/ToggleMenu";
 
 export default component$(() => {

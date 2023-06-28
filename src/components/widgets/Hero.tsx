@@ -1,4 +1,4 @@
-import { component$, useStore } from "@builder.io/qwik";
+import { component$ } from "@builder.io/qwik";
 // import { QwikLottie } from 'qwik-lottie';
 
 // @ts-ignore

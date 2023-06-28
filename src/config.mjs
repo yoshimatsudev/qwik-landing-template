@@ -1,12 +1,12 @@
 export const SITE = {
-  name: "Qwind",
+  name: "Loja iBuy",
 
   title:
-    "Qwind — Free template for Qwik + Tailwind CSS to build your new website.",
+    "Loja iBuy - Troque seu aparelho com o melhor preço",
   description:
-    "Qwind is a free and ready to start template to make your website using Qwik and Tailwind CSS.",
+    "riklikliklik",
 
-  origin: "https://qwind.pages.dev",
+  origin: "https://www.lojaibuy.com.br",
   basePathname: "/",
   trailingSlash: true,
 };

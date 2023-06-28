@@ -1,7 +1,8 @@
-import { component$, useStore } from "@builder.io/qwik";
+import { component$, useStore, useClientEffect$ } from "@builder.io/qwik";
 import { useContent } from "@builder.io/qwik-city";
 
-import Logo from "~/components/atoms/Logo";
+import LogoDark from "~/components/atoms/LogoDark";
+import LogoWhite from "~/components/atoms/LogoWhite";
 import ToggleTheme from "~/components/core/ToggleTheme";
 import ToggleMenu from "~/components/core/ToggleMenu";
 
@@ -11,6 +12,7 @@ export default component$(() => {
   });
 
   const { menu } = useContent();
+
 
   return (
     <header
@@ -31,10 +33,17 @@ export default component$(() => {
       <div class="py-3 px-3 mx-auto w-full md:flex md:justify-between max-w-6xl md:px-4">
         <div class="flex justify-between">
           <a class="flex items-center" href={"/"}>
-            <Logo />
+            <LogoWhite />
           </a>
           <div class="flex items-center md:hidden">
-            <ToggleTheme iconClass="w-6 h-6" />
+            {/* <ToggleTheme iconClass="w-6 h-6" /> */}
+            <a
+              href="https://api.whatsapp.com/send?phone=5541992494753"
+              aria-label="Faça já seu orçamento"
+              class="ml-3 btn btn-primary w-full h-10 px-5 shadow-none text-base"
+            >
+              Avalie seu aparelho agora
+            </a>
             <ToggleMenu iconClass="w-6 h-6" />
           </div>
         </div>
@@ -81,7 +90,7 @@ export default component$(() => {
           </nav>
 
           <div class="hidden items-center md:flex">
-            <ToggleTheme iconClass="w-6 h-6" />
+            {/* <ToggleTheme iconClass="w-6 h-6" /> */}
             <a
               href="https://github.com/onwidget/qwind"
               aria-label="Qwind Github"

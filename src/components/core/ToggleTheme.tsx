@@ -31,9 +31,13 @@ export default component$((props: ItemProps) => {
       aria-label="Toggle between Dark and Light mode"
       onClick$={() => {
         switch (store.theme) {
+          case "dark":
+            document.documentElement.classList.remove("dark");
+            store.theme = window.localStorage.theme = "light";
+            break;
           default:
-            document.documentElement.classList.add("dark");
-            store.theme = window.localStorage.theme = "dark";
+            document.documentElement.classList.add("light");
+            store.theme = window.localStorage.theme = "light";
             break;
         }
       }}
